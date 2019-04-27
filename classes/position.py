@@ -3,8 +3,8 @@ import math
 
 class Position:
     def __init__(self, longitude_degrees, latitude_degrees):
-        self.longitude_degrees = longitude_degrees
         self.latitude_degrees = latitude_degrees
+        self.longitude_degrees = longitude_degrees
 
     @property
     def longitude(self):
