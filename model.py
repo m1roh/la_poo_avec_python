@@ -1,8 +1,12 @@
 class Agent:
-    pass
+    def __init__(self, agreeableness):
+        self.agreeableness = agreeableness
+
+    def say_hello(self, first_name):
+        return "Bien le bonjour " + first_name + " !"
 
 
-first_agent = Agent()
-second_agent = Agent()
+agent = Agent(0)
 
-print(first_agent, second_agent)
+print(agent.say_hello('Romain'))
+print(agent.agreeableness)
